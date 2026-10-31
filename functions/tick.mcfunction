@@ -1,0 +1,1 @@
+execute unless score game_data world_state matches 1 run function helpers/setup/world_load

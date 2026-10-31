@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:item": {
+		"description": {
+			"category": "Items",
+			"identifier": "umm:player_settings"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "umm.settings_icon"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:allow_off_hand": {
+				"value": true
+			}
+		}
+	}
+}

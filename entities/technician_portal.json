@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "umm:technician_portal",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:collision_box": {
+				"height": 0.5,
+				"width": 0.5
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			},
+			"minecraft:knockback_resistance": {
+				"max": 0
+			},
+			"minecraft:water_movement": {
+				"drag_factor": 0.0
+			}
+		},
+		"events": {}
+	}
+}

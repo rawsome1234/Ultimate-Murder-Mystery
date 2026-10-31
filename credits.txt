@@ -1,0 +1,154 @@
+# Ultimate Murder Mystery
+
+This pack was developed and programmed by rawsome1234 from start to finish.
+Octoyoshi, SkullMasters, Dooplikyu, and TaxDodger12 were large helpers of this pack's development, planning, and execution.
+Octoyoshi in particular greatly helped when it came to existing MM roles and what needs to be in here, as well as feedback.
+
+### Extra Credits
+Thank you to Daniye for developing the Hide Nametags pack (https://www.curseforge.com/minecraft-bedrock/addons/no-more-names-hide-nametags-in-your-worlds-addon)
+    This is what allows this pack to hide player nametags, although of course that addon is not required.
+This pack was heavily inspired by Town of Us (ToU), a mod for Among Us (which can be found at https://github.com/AU-Avengers/TOU-Mira) based on Town of Salem.
+    Modifiers and Role Guessing were directly inspired by ToU, as well as many of the roles in this pack.
+
+### AI Disclosure
+All of the code in this project was written by hand, unless otherwise specified. All research into the poorly documented
+    Scripting API was done by hand using the documentation, autocomplete, and experimentation.
+
+### Playtesters
+rawsome1234
+Octoyoshi1972
+TaxDodger12
+Dooplikyu
+SkullMasters
+Coolpenguin3745
+R3dstoneMaster11
+Richy Playz1479
+Nicky
+SavageNoodles
+DrawingPort5706
+bascout
+indomnisdragon
+Lukecat05
+maple_therat
+CrescentTheWolf
+Deathfinder4034
+CatBoxFox - ProtoBoxFox
+Camvv1
+
+Octoyoshi1972
+SkullMasters
+Richy Playz1479
+DrawingPort5706
+Lukecat05
+Deathfinder4034
+
+TaxDodger12
+Coolpenguin3745
+Nicky
+bascout
+maple_therat
+CatBoxFox - ProtoBoxFox
+
+rawsome1234
+Dooplikyu
+R3dstoneMaster11
+SavageNoodles
+indomnisdragon
+CrescentTheWolf
+Camvv1
+## Content Credits 
+Some roles and modifiers are so synonymous with Social Deduction games that their origins are hard to determine, or they could be credited to many sources.
+    These roles are marked with an SD.
+Some roles are legacy roles from MM. These roles either have been reworked or it has unknown player origins. They are marked with (Legacy). If anyone knows the exact player or origin of those roles, please let me know.
+Roles/Modifiers inspired by Town of Us are marked with a ToU. If major tweaks were made, other people may be credited.
+
+### Role Credits:
+Altruist - ToU
+Cleric - ToU/rawsome1234
+Detective - Octoyoshi
+Gravewalker - Octoyoshi
+Hex - Octoyoshi (also the first role with an ability in Legacy, fun fact)
+Investigator - ToU
+Jailor - ToU
+Medic - ToU
+Medium - Octoyoshi
+Mortician - SD (rawsome1234 for specific information types)
+Mystic - ToU
+Officer - ToU/rawsome1234
+Revealer - Octoyoshi/rawsome1234 (Equivilent of Seer SD)
+Sheriff - ToU/Octoyoshi
+Soul - Octoyoshi
+Spy - Octoyoshi
+Tracker - ToU
+Transporter - ToU
+Trapper - ToU/Octoyoshi/rawsome1234
+Trickster - Octoyoshi
+Veteran - rawsome1234
+Vigilante - ToU
+
+Apothocary - rawsome1234
+Bomber - ToU
+Cryomancer - rawsome1234
+Escapist - ToU
+Ghost Writer - Dooplikyu
+Janitor - ToU
+Necromancer - Octoyoshi (Alignment changed from Legacy)
+Swooper - ToU
+Technician - rawsome1234
+Tempest - rawsome1234
+Warden - BenjiFoxy
+Warlock - ToU/rawsome1234
+Witch - Octoyoshi
+
+Amnesiac - ToU
+Assassin - Octoyoshi (and CoolPenguin3745 for stealing Alignments)
+Bodyguard - Shady (SD)/ToU
+Doppelganger - BenjiFoxy
+Ghost - Octoyoshi/rawsome1234 (Reworked from Legacy)
+Jester - Everything. Designed by the Original MM Crew, in every SD game, but also completely reworked for this game. This was the first role in Murder Mystery, so it has a special place
+Survivor - ToU
+Tycoon - rawsome1234
+
+Artemis - rawsome1234
+Double Agent - Octoyoshi/rawsome1234
+Plaguebearer - ToU/rawsome1234
+Serial Killer - Octoyoshi/rawsome1234 (Reworked from Legacy)
+Shadowmancer - Dooplikyu
+Stalker - rawsome1234
+The Glitch - ToU/rawsome1234
+Vampire - Octoyoshi (SD)
+
+Modifier Credits
+Agent - rawsome1234
+Finalist - rawsome1234
+Flash - ToU/rawsome1234 (In ToU is Mini)
+Gambler - rawsome1234
+Hacker - rawsome1234
+Lone Wolf - rawsome1234/SkullMasters
+Lovers - SD
+Nurse - rawsome1234/Octoyoshi
+Party Animal - rawsome1234/SkullMasters
+Prickly - Octoyoshi
+Radar - ToU
+Repel - rawsome1234
+Shy - ToU
+Sixth Sense - ToU
+Sniper - rawsome1234/Dooplikyu/SkullMasters/Octoyoshi
+Tarot Reader - rawsome1234
+
+Addict - rawsome1234
+Comeback - rawsome1234
+Diseased - ToU
+Frosty - ToU
+Jammer - CatBoxFox
+Rotting - ToU
+Shout - rawsome1234
+
+Lifesteal - rawsome1234
+Raid Boss - rawsome1234
+Sentry - rawsome1234
+Underdog - ToU/rawsome1234
+
+Disperser - ToU
+Double Shot - ToU
+Telepath - ToU

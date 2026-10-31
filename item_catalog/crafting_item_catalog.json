@@ -1,0 +1,86 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "umm:draft_option_murderer",
+              "name": "umm:draft_options"
+            },
+            "items": [
+                "umm:draft_option_soul",
+                "umm:draft_option_medium",
+                "umm:draft_option_altruist",
+                "umm:draft_option_detective",
+                "umm:draft_option_revealer",
+                "umm:draft_option_assassin",
+                "umm:draft_option_bodyguard",
+                "umm:draft_option_serial_killer",
+                "umm:draft_option_necromancer",
+                "umm:draft_option_investigator",
+                "umm:draft_option_vampire",
+                "umm:draft_option_hex",
+                "umm:draft_option_warden",
+                "umm:draft_option_trickster",
+                "umm:draft_option_double_agent",
+                "umm:draft_option_sheriff",
+                "umm:draft_option_vigilante",
+                "umm:draft_option_amnesiac",
+                "umm:draft_option_trapper",
+                "umm:draft_option_tracker",
+                "umm:draft_option_transporter",
+                "umm:draft_option_survivor",
+                "umm:draft_option_escapist",
+                "umm:draft_option_swooper",
+                "umm:draft_option_medic",
+                "umm:draft_option_janitor",
+                "umm:draft_option_apothocary",
+                "umm:draft_option_tempest",
+                "umm:draft_option_technician",
+                "umm:draft_option_mystic",
+                "umm:draft_option_cleric",
+                "umm:draft_option_bomber",
+                "umm:draft_option_warlock",
+                "umm:draft_option_spy",
+                "umm:draft_option_ghost_writer",
+                "umm:draft_option_glitch",
+                "umm:draft_option_jailor",
+                "umm:draft_option_cryomancer",
+                "umm:draft_option_officer",
+                "umm:draft_option_witch",
+                "umm:draft_option_tycoon",
+                "umm:draft_option_mortician",
+                "umm:draft_option_shadowmancer",
+                "umm:draft_option_artemis",
+                "umm:draft_option_stalker",
+                "umm:draft_option_plague_bearer",
+                "umm:draft_option_jester",
+                "umm:draft_option_doppelganger",
+                "umm:draft_option_gravewalker",
+                "umm:draft_option_veteran",
+                "umm:draft_option_ghost",
+                "umm:draft_option_murderer",
+                "umm:draft_option_innocent"
+            ]
+          }, 
+          {
+            "group_identifier": {
+              "icon": "umm:settings_icon",
+              "name": "umm:all_items_category"
+            },
+            "items": [
+                "umm:settings_icon",
+                "umm:player_settings",
+                "umm:role_action",
+                "umm:guessing_action",
+                "umm:role_book"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

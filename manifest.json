@@ -1,0 +1,71 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"rawsome1234."
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "Ultimate Murder Mystery",
+		"description": "The Ultimate behavior pack for Murder Mystery, with custom mechanics and features, role support and reworks, and much more!",
+		"min_engine_version": [
+			1,
+			21,
+			70
+		],
+		"uuid": "b67d2c66-6845-4edb-b8a9-2c5d0cb79d03",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "2e9a0c1b-efb8-4fec-bedb-8b16ec32b2c1",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "d44005c6-53eb-4e56-8ac4-0d4d3e558ae9",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.12.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.2.0"
+		},
+		{
+			"uuid": "3bd5d6e3-18d5-44f6-b1e3-459d5c6cbfae",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

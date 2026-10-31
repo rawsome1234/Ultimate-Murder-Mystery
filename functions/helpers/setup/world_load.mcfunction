@@ -1,0 +1,1 @@
+function helpers/setup/setup_scoreboards
