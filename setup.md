@@ -3,7 +3,7 @@ If you're looking for a How to Play guide, there is a brief markdown document in
     what settings do, they generally try to explain themselves fairly well, but there is also an `About` at the bottom of the `Open Settings` item.
 
 # Installation Guide
-You already have this pack downloaded so we'll skip that step.
+You already have this pack downloaded so we'll skip that step, although make sure you have the Resource Pack installed.
 To install, either double click the `.mcpack` file (often with Minecraft closed) and it will install in Minecraft.
     If you've previously had a version of UMM installed, you may want to delete it.
 

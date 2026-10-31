@@ -1,5 +1,5 @@
 # How to Play Murder Mystery
-Murder Mystery is a social deduction game, typically played on pre-made maps, where one or a small number of players are chosen as Murderers and everyone else is Innocent. The Murderers need to kill all the innocents, whereas the innocents need to kill all the murderers.
+Murder Mystery is a social deduction game, typically played on pre-made maps, where one or a small number of players are chosen as Murderers and everyone else is Innocent. The Murderers need to kill all the innocents, whereas the innocents need to kill all the murderers. Innocents are not allowed to kill unless they know someone is a murderer, including seeing an attack.
 
 Murder Mystery (MM) is a fairly common gamemode even in Minecraft. Unlike most versions of MM, in this version every player has an iron sword, a bow, and infinite arrows, meaning the mode uses minecraft's basic PVP. The only distinction between Murderers and Innocents is that Murderers are allowed to kill.
 The typical variation played is Murder Mystery 2 (MM2), where 2 players are the murderers. When more than 1 player is the murderer, innocents are allowed to kill if they are 100% sure if someone is the murderer.
