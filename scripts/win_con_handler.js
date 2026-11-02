@@ -199,10 +199,10 @@ export class WinConditionManager {
         let respawnDim = ScoreboardManager.getTrackedObjective("respawn_pos.dim");
         let respawnLoc = { x: respawnX+.5, y: respawnY, z: respawnZ+.5 };
         let teleportSettings = { dimension: world.getDimension(this.dimensionIDToString(respawnDim)), keepVelocity: false };
-        world.getAllPlayers().forEach((player, i) => {
+        world.getAllPlayers().forEach((player) => {
             player.stopAllSounds();
             player.removeEffect("minecraft:wither");
-            player.teleport(PlayerHandler.addVectors(respawnLoc, {x:100*i, y:1000, z:0}, teleportSettings));
+            // player.teleport(PlayerHandler.addVectors(respawnLoc, {x:100*i, y:1000, z:0}, teleportSettings));
             system.runTimeout(() => {
                 this.teleportPlayerToSpawn(player);
                 SoundManager.playSoundEffect([player], SoundEffectType.WIN_CLAP);

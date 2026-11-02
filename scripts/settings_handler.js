@@ -800,6 +800,7 @@ export class SettingsHandler {
                     return;
                 case 1: // Load
                     PresetManager.loadPreset(preset);
+                    player.sendMessage("Loaded preset!");
                     break;
                 case 2: // Save
                     PresetManager.saveToPreset(preset);
@@ -1106,6 +1107,7 @@ export class SettingsHandler {
         form.button("Important Commands");
         form.button("How to set Player Alignments");
         form.button("Other Game Settings");
+        form.button("Hosting & Navigating Settings");
         form.button("Being a Player");
         form.button("What are Modifiers?");
         form.button("About Rule Presets");
@@ -1132,22 +1134,25 @@ export class SettingsHandler {
                 case 3: // Other Game Settings
                     SettingsHandler._openGameSettingsAboutMenu(player);
                     break;
-                case 4: // Being a player
+                case 4: // Hosting & Settings Navigation
+                    SettingsHandler._openHostingAndNavigatingAboutMenu(player);
+                    break;
+                case 5: // Being a player
                     SettingsHandler._openBeingPlayerAboutMenu(player);
                     break;
-                case 5: // What are Modifiers
+                case 6: // What are Modifiers
                     SettingsHandler._openModifiersAboutMenu(player);
                     break;
-                case 6: // About Rule Presets
+                case 7: // About Rule Presets
                     SettingsHandler._openRulePresetsAboutMenu(player);
                     break;
-                case 7: // Block Interaction Settings
+                case 8: // Block Interaction Settings
                     SettingsHandler._openBlockAboutMenu(player);
                     break;
-                case 8: // Custom Music
+                case 9: // Custom Music
                     SettingsHandler._openCustomMusicAboutMenu(player);
                     break;
-                case 9: // Custom Roles & Modding
+                case 10: // Custom Roles & Modding
                     SettingsHandler._openCustomDataAboutMenu(player);
                     break;
                 default:
@@ -1225,6 +1230,34 @@ export class SettingsHandler {
         message += "\n\n§lAlignment Settings§r: Lets you set the minimum and maximum of each alignment. Roles are assigned alignment first then individual roles. You can turn off murderers and just have neutral killers if you wish.";
         message += "\n\n§lRole Counts§r: Roles can only naturally be rolled once, but here you can roll them multiple times. Being enabled and having a count of 0 are different since Role Guessing looks for if the role is enabled, not if it is rollable.";
         message += "\n\n§lRole Weights§r: Lets you determine how likely compared to other roles a role is to be rolled. You can also force a certain role to be rolled if you set its weight to 105.";
+        
+        form.label(message);
+
+        form.show(player).then((r) => {
+            if (r.canceled) {
+                return;
+            }
+
+            SettingsHandler.openAboutMenu(player);
+        });
+    }
+
+    static _openHostingAndNavigatingAboutMenu(player) {
+        let form = new ModalFormData();
+        form.title("Hosting & Navigating Settings");
+        form.divider();
+        
+        let message = "The Settings are a pretty complex place, but the game offers a lot you can configure. This is an overview of the basics, and many other about pages go into more detail about certain settings.";
+        message += "\n\n§lPlayer Counts§r";
+        message += "\nIn the §lPlayer Role Settings -> Game Role & Alignment Count§r menu, you can set the number of murderers, innocents, and other alignments. Anyone not assigned a role is automatically assigned innocent.";
+        message += "\n\n§lGetting Started§r";
+        message += "\nBy default, all roles (except Murderer and Innocent) are off. If you're learning UMM, or have players getting into it for the first time, it's recommended to use the built in presets. You can do so by going into §lRole Presets§r, and starting with the §oIntroduction to Roles§r preset. To load it, click the preset and then press the \"Load Preset\" button. Once players are comfortable with that, you can try out the §oIntroduction to Killers§r preset.";
+        message += "\n\n§lHow to Run the Game§r";
+        message += "\nAfter finishing setting player counts, press the Reset Dispenser Button (assigned during setup) to fill the dispenser with books. Players then go through and get one book each from the dispenser. Once everyone has a book, flick the start lever. Players will be automatically given Role Action and Role Guessing items.";
+        message += "\n\n§lEnabling More Roles§r";
+        message += "\nThere are plenty of roles not included in the presets. If you want to try some of those out, or are bored of the presets, you can enable more roles by going into §lRole Settings§r and selected which type of roles to look at. You can then select a role and toggle the §lEnabled§r toggle at the top to add it to the game. Alternatively, you could use the §lRole/Modifier Randomizer§r to turn on random roles.";
+        message += "\n\n§lWhat else is There?§r";
+        message += "\nThere are plenty of other features included in the pack. Modifiers would be the next thing to look at, and have their own page in the help guide. There are also other game mechanics described in their respective pages as well. It is recommended to explore the pages in the guide so that you have a general idea of what the pack can do.";
         
         form.label(message);
 
@@ -2156,6 +2189,7 @@ export class SettingsHandler {
         form.button("Current Role/Modifier Help");
         form.button("Role Settings");
         form.button("Modifier Settings");
+        form.button("Help");
         form.button("Custom Sound Settings");
         form.button("Game Settings");
         form.button("View Game Log");
@@ -2177,21 +2211,24 @@ export class SettingsHandler {
                 case 2: // modifier settings
                     SettingsHandler._showPlayerModifierInformation(player);
                     break;
-                case 3: // sound settings
+                case 3: // help settings
+                    SettingsHandler._openPlayerHelpAboutMenu(player);
+                    break;
+                case 4: // sound settings
                     SettingsHandler._showPlayerSoundSettings(player);
                     break;
-                case 4: // game settings
+                case 5: // game settings
                     SettingsHandler._viewGameSettings(player);
                     break;
-                case 5: // game log
+                case 6: // game log
                     LogManager.openLogForm(player);
                     // SettingsHandler.openRoleDescription(player, SettingsHandler.openPlayerSettings);
                     break;
-                case 6: // player stats
+                case 7: // player stats
                     // player stats
                     PlayerStatsHandler.openPlayerStatsForm(player, SettingsHandler.openPlayerSettings);
                     break;
-                case 7: // afk
+                case 8: // afk
                     if (player.hasTag("AFK")) {
                         player.removeTag("AFK");
                         world.sendMessage(player.name + " is back from being AFK");
@@ -2360,6 +2397,36 @@ export class SettingsHandler {
 
     static _showPlayerGameInformation(player) {
         
+    }
+
+    
+
+    static _openPlayerHelpAboutMenu(player) {
+        let form = new ModalFormData();
+        form.title("Help");
+        form.divider();
+
+        let message = "This page will give you an overview of how to play UMM and how to navigate these settings.";
+        message += "\n\n§lNew Items§r\nWhen the game starts, you will be given a Role Action item and a Role Guessing item. You can activate your role ability (in general and on players) by using the item. Abilities have cooldowns that you'll have to wait for before using your ability again. Your role can be guessed by the murderers, who can use the Role Guessing item.";
+        message += "\n\n§lGhost Bodies§r\n When a player dies, they leave behind a wisp that only certain roles can see, as well as murderers. Use this to know where someone died.";
+        message += "\n\n§lWhat is my Role?§r\nBy typing §o!help§r into the chat, or by clicking the §lCurrent Role/Modifier Help§r button in these settings, you can get an explanation of what your role is and how to play it.";
+        message += "\n\n§lSo What Can I See Here?§r";
+        message += "\nThese settings contain a log of useful features. The primary ones are the §lRole Settings§r, where you can see the currently enabled roles and their configuration. You can also view your player stats from this session (kills, guesses, rounds won, etc) and the current and past Game Logs, which hold a record of all messages and ability uses from each game. You can also see all the current Game Settings.";
+        message += "\n\n§lGoing AFK§r\nThe last button in the Player Settings lets you go AFK, which will remove you from games until you come back. This means you won't have to leave the world.";
+        message += "\n\n§lThe Music is too loud/soft§r\nIn the §lCustom Sound Settings -> Personal Sound Settings§r, you can change the volume of Music and SFX. Volume changes will take place when the next song starts playing.";
+        message += "\n\n§lUseful Commands§r";
+        message += "\n\n!settings - gives you this settings item";
+        message += "\n\n!log - opens the current game's game log";
+        message += "\n\nThe pack automatically handles gametags, so unlike traditional MM, you can also leave nametags on.";
+        form.label(message);
+
+        form.show(player).then((r) => {
+            if (r.canceled) {
+                return;
+            }
+
+            SettingsHandler.openPlayerSettings(player);
+        });
     }
 
     /**

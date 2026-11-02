@@ -82,12 +82,12 @@ export class GuessingManager {
         form.title("Role Guessing Menu");
         form.label("Select a player and a role. If you are correct, they will die. If you are incorrect, you will.");
 
-        let players = this.sortPlayersWithoutTag(this._getPlayingPlayers(world.getAllPlayers(), player), "dead");
+        let players = this.sortPlayersWithoutTag(this._getPlayingPlayers(world.getAllPlayers(), player), "dead").sort((a, b) => a.name.localeCompare(b.name));
         if (players.length <= 0) {
             player.sendMessage("There aren't any players to guess!");
             return;
         }
-        let playerNames = players.map((p) => p.name).sort((a, b) => a.localeCompare(b));
+        let playerNames = players.map((p) => p.name);
 
         let roles = RoleManager.getEnabledRoles();
         roles = RoleManager.sortByTypes(roles, guessableRoles);

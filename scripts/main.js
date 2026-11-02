@@ -126,7 +126,7 @@ world.beforeEvents.chatSend.subscribe(async (event) => {
             }
             return;
         case "!version":
-            player.sendMessage("Current UMM Version is §lv1.0.0dev");
+            player.sendMessage("Current UMM Version is §lv1.0.1");
             return;
         case "!dev-music":
             if (PlayerHandler.getWorldOwner().id != player.id) {
